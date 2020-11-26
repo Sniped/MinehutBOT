@@ -5,6 +5,7 @@ import { AnnouncementConfiguration } from './feature/announcement';
 import { CensorConfiguration } from './feature/censor';
 import { BoosterPassConfiguration } from './feature/boosterPass';
 import { CommandConfiguration } from './feature/command';
+import { AutoReactConfiguration } from './feature/autoReact';
 
 // The GuildConfiguration can have settings about permissions, log channels, disabled features, etc.
 export interface GuildConfiguration {
@@ -19,5 +20,6 @@ export interface GuildConfiguration {
 		announcement?: AnnouncementConfiguration;
 		censor?: CensorConfiguration;
 		boosterPass?: BoosterPassConfiguration;
+		autoReact?: AutoReactConfiguration;
 	};
 }
